@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		E5DC3E2326AB6A6D0076141C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC3E2226AB6A6D0076141C /* AppDelegate.swift */; };
 		E5DC3E2526AB6A6D0076141C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC3E2426AB6A6D0076141C /* SceneDelegate.swift */; };
-		E5DC3E2726AB6A6D0076141C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC3E2626AB6A6D0076141C /* ViewController.swift */; };
+		E5DC3E2726AB6A6D0076141C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC3E2626AB6A6D0076141C /* ListViewController.swift */; };
 		E5DC3E2A26AB6A6D0076141C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DC3E2826AB6A6D0076141C /* Main.storyboard */; };
 		E5DC3E2D26AB6A6D0076141C /* RubyGems.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5DC3E2B26AB6A6D0076141C /* RubyGems.xcdatamodeld */; };
 		E5DC3E2F26AB6A6F0076141C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DC3E2E26AB6A6F0076141C /* Assets.xcassets */; };
 		E5DC3E3226AB6A6F0076141C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DC3E3026AB6A6F0076141C /* LaunchScreen.storyboard */; };
+		E5DC3E3B26ABA0D50076141C /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC3E3A26ABA0D50076141C /* SplitViewController.swift */; };
+		E5DC3E3D26ABA2F80076141C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC3E3C26ABA2F80076141C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E5DC3E1F26AB6A6D0076141C /* RubyGems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyGems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DC3E2226AB6A6D0076141C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5DC3E2426AB6A6D0076141C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E5DC3E2626AB6A6D0076141C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5DC3E2626AB6A6D0076141C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E5DC3E2926AB6A6D0076141C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5DC3E2C26AB6A6D0076141C /* RubyGems.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RubyGems.xcdatamodel; sourceTree = "<group>"; };
 		E5DC3E2E26AB6A6F0076141C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5DC3E3126AB6A6F0076141C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5DC3E3326AB6A6F0076141C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5DC3E3A26ABA0D50076141C /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		E5DC3E3C26ABA2F80076141C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,10 @@
 		E5DC3E2126AB6A6D0076141C /* RubyGems */ = {
 			isa = PBXGroup;
 			children = (
+				E5DC3E3E26ABA3200076141C /* Model */,
+				E5DC3E3926ABA0B10076141C /* ViewControllers */,
 				E5DC3E2226AB6A6D0076141C /* AppDelegate.swift */,
 				E5DC3E2426AB6A6D0076141C /* SceneDelegate.swift */,
-				E5DC3E2626AB6A6D0076141C /* ViewController.swift */,
 				E5DC3E2826AB6A6D0076141C /* Main.storyboard */,
 				E5DC3E2E26AB6A6F0076141C /* Assets.xcassets */,
 				E5DC3E3026AB6A6F0076141C /* LaunchScreen.storyboard */,
@@ -68,6 +73,23 @@
 				E5DC3E2B26AB6A6D0076141C /* RubyGems.xcdatamodeld */,
 			);
 			path = RubyGems;
+			sourceTree = "<group>";
+		};
+		E5DC3E3926ABA0B10076141C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5DC3E3A26ABA0D50076141C /* SplitViewController.swift */,
+				E5DC3E2626AB6A6D0076141C /* ListViewController.swift */,
+				E5DC3E3C26ABA2F80076141C /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E5DC3E3E26ABA3200076141C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5DC3E2726AB6A6D0076141C /* ViewController.swift in Sources */,
+				E5DC3E3B26ABA0D50076141C /* SplitViewController.swift in Sources */,
+				E5DC3E2726AB6A6D0076141C /* ListViewController.swift in Sources */,
 				E5DC3E2326AB6A6D0076141C /* AppDelegate.swift in Sources */,
+				E5DC3E3D26ABA2F80076141C /* DetailViewController.swift in Sources */,
 				E5DC3E2526AB6A6D0076141C /* SceneDelegate.swift in Sources */,
 				E5DC3E2D26AB6A6D0076141C /* RubyGems.xcdatamodeld in Sources */,
 			);
