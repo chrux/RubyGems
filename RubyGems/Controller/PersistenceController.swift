@@ -12,7 +12,11 @@ struct PersistenceController {
     
     // MARK: - Core Data stack
 
-     let container: NSPersistentContainer
+    let container: NSPersistentContainer
+    
+    var managedContext: NSManagedObjectContext {
+        return container.viewContext
+    }
     
     init() {
         /*
@@ -41,6 +45,8 @@ struct PersistenceController {
         
         if isFirstTimeLaunch {
             createInitialGems(viewContext: container.viewContext)
+            
+            saveContext()
         }
     }
 
