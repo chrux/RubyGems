@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5C8D09F26ABBC6E003130BD /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C8D09E26ABBC6E003130BD /* PersistenceController.swift */; };
+		E5C8D0A626ABC107003130BD /* Gem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C8D0A426ABC107003130BD /* Gem+CoreDataClass.swift */; };
+		E5C8D0A726ABC107003130BD /* Gem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C8D0A526ABC107003130BD /* Gem+CoreDataProperties.swift */; };
 		E5DC3E2326AB6A6D0076141C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC3E2226AB6A6D0076141C /* AppDelegate.swift */; };
 		E5DC3E2526AB6A6D0076141C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC3E2426AB6A6D0076141C /* SceneDelegate.swift */; };
 		E5DC3E2726AB6A6D0076141C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC3E2626AB6A6D0076141C /* ListViewController.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5C8D09E26ABBC6E003130BD /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		E5C8D0A426ABC107003130BD /* Gem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E5C8D0A526ABC107003130BD /* Gem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E5DC3E1F26AB6A6D0076141C /* RubyGems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyGems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DC3E2226AB6A6D0076141C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5DC3E2426AB6A6D0076141C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5C8D09D26ABBC5C003130BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5C8D09E26ABBC6E003130BD /* PersistenceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E5DC3E1626AB6A6D0076141C = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +76,7 @@
 		E5DC3E2126AB6A6D0076141C /* RubyGems */ = {
 			isa = PBXGroup;
 			children = (
+				E5C8D09D26ABBC5C003130BD /* Controller */,
 				E5DC3E3E26ABA3200076141C /* Model */,
 				E5DC3E3926ABA0B10076141C /* ViewControllers */,
 				E5DC3E2226AB6A6D0076141C /* AppDelegate.swift */,
@@ -88,6 +103,8 @@
 		E5DC3E3E26ABA3200076141C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E5C8D0A426ABC107003130BD /* Gem+CoreDataClass.swift */,
+				E5C8D0A526ABC107003130BD /* Gem+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,11 +180,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DC3E3B26ABA0D50076141C /* SplitViewController.swift in Sources */,
+				E5C8D09F26ABBC6E003130BD /* PersistenceController.swift in Sources */,
 				E5DC3E2726AB6A6D0076141C /* ListViewController.swift in Sources */,
 				E5DC3E2326AB6A6D0076141C /* AppDelegate.swift in Sources */,
+				E5C8D0A726ABC107003130BD /* Gem+CoreDataProperties.swift in Sources */,
 				E5DC3E3D26ABA2F80076141C /* DetailViewController.swift in Sources */,
 				E5DC3E2526AB6A6D0076141C /* SceneDelegate.swift in Sources */,
 				E5DC3E2D26AB6A6D0076141C /* RubyGems.xcdatamodeld in Sources */,
+				E5C8D0A626ABC107003130BD /* Gem+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
