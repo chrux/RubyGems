@@ -9,7 +9,7 @@ import UIKit
 
 class GemTableViewCell: UITableViewCell {
     
-    @IBOutlet var photo: UIImageView!
+    @IBOutlet var photoView: UIImageView!
     @IBOutlet var nameLbl: UILabel!
     @IBOutlet var mainColorLbl: UILabel!
     

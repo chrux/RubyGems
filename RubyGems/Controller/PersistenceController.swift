@@ -18,6 +18,16 @@ struct PersistenceController {
         return container.viewContext
     }
     
+    var isFirstTimeLaunch: Bool {
+        let key = "first_time_launch"
+        guard UserDefaults.standard.bool(forKey: key) else {
+            UserDefaults.standard.setValue(true, forKey: key)
+            return true
+        }
+        
+        return false
+    }
+    
     init() {
         /*
          The persistent container for the application. This implementation
@@ -53,10 +63,9 @@ struct PersistenceController {
     // MARK: - Core Data Saving support
 
     func saveContext () {
-        let context = container.viewContext
-        if context.hasChanges {
+        if managedContext.hasChanges {
             do {
-                try context.save()
+                try managedContext.save()
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -191,14 +200,5 @@ struct PersistenceController {
         bismuth.transparency = "n/a"
 //        bismuth.timestamp = Date()
     }
-    
-    var isFirstTimeLaunch: Bool {
-        let key = "first_time_launch"
-        guard UserDefaults.standard.bool(forKey: key) else {
-            UserDefaults.standard.setValue(true, forKey: key)
-            return true
-        }
-        
-        return false
-    }
+
 }
